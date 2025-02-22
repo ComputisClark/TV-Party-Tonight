@@ -22,10 +22,17 @@
         }
         .media-tile a {
             display: block;
+	    transition: transform 0.3s ease-in-out;
+        }
+	a:hover img {
+            transform: scale(1.1);
         }
         .media-tile img {
             width: 200px;
             height: auto;
+        }
+	.media-tile H1 {
+            padding-top: 20px;
         }
         body > div {
             display: flex;
@@ -49,8 +56,8 @@
 <body>
 
     <div>
-        <div class="row justify-content-center">
-            <div class="col-lg-12 media"><h1><br>TV Links Tonight!</h1></div>
+        <div class="container">
+            <div class="col-lg-12 media-tile"><h1>TV Links Tonight!</h1></div>
         <div class="row justify-content-center">
             <div class="col-lg-3 media-tile"><a href="https://www.youtube.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"></a></div>
             <div class="col-lg-3 media-tile"><a href="https://www.hulu.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hulu_logo_%282018%29.svg/330px-Hulu_logo_%282018%29.svg.png" alt="Hulu"></a></div>
