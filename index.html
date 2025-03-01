@@ -84,6 +84,12 @@
                 width: 15vw;
             }
         }
+        .weather-widget {
+            border: 2px solid #f7f1f1; /* Adjust the border color and thickness */
+            padding: 30px; /* Add some padding for a nicer look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+            background-color: #363434; /* Optional: Background color for the widget */
+        }
     </style>
 </head>
 <body>
@@ -111,6 +117,10 @@
                 <div class="col-lg-3 media-tile"><a href="https://open.spotify.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2024_Spotify_Logo.svg/405px-2024_Spotify_Logo.svg.png" alt="Spotify"></a></div>
                 <div class="col-lg-3 media-tile"><a href="https://www.paramountplus.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paramount%2B_logo.svg/375px-Paramount%2B_logo.svg.png" alt="Paramount"></a></div>
                 <div class="col-lg-3 media-tile"><a href="https://www.peacocktv.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/NBCUniversal_Peacock_Logo.svg/375px-NBCUniversal_Peacock_Logo.svg.png" alt="Peacock"></a></div>
+            </div>
+            <div class="weather-widget row justify-content-center">
+                <h2>The Rust Twp Weather Report</h2>
+                <iframe width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=radar&product=radar&level=surface&lat=42.326&lon=-83.716&detailLat=45.059&detailLon=-83.901&detail=true&pressure=true" frameborder="0"></iframe>
             </div>
         </div>
     </div>
